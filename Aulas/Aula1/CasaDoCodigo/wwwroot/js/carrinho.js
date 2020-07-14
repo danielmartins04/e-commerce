@@ -14,7 +14,7 @@
     updateQuantidade(input) {
         let data = this.getData(input);
         this.postQuantidade(data);
-    }
+    } 
 
     getData(elemento) {
         var linhaDoItem = $(elemento).parents('[item-id]');
