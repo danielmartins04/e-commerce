@@ -43,7 +43,9 @@ namespace CasaDoCodigo.Models
         }
 
         public virtual Pedido Pedido { get; set; }
-        [Required]
+        [MinLength(5, ErrorMessage = "Nome deve ter no minimo 5 caracteres")]
+        [MaxLength(50, ErrorMessage = "Nome deve ter no máximo 50 caracteres")]
+        [Required(ErrorMessage = "Nome é obrigatório")]
         public string Nome { get; set; } = "";
         [Required]
         public string Email { get; set; } = "";
