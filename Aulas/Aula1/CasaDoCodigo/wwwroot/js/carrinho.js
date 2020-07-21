@@ -52,7 +52,6 @@
                 linhaDoItem.remove();
             }
 
-            debugger;
         });
     }
 }
